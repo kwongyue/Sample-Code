@@ -1,0 +1,15 @@
+Kwong Yuen Yau
+Sample code for interview. 
+
+
+Number of doctors by specializations?
+select count(doctor_ID)as Number_of_Doctors,specialization from doctor group by specialization;
+
+Display the first name and join date of the employees who joined between 2002 and 2005?
+select first_name,hire_date from employees where hire_date between'01-JAN-2002' and '31-DEC-2005' order by hire_date;
+
+Display first name, salary, and round the salary to thousands.
+select first_name,salary,round(salary,-3)from empoloyees;
+
+List all customers and their orders with inner join?
+select customers.customername, orders.orderid from customers inner join orders on customers.customerid=orders.orderID;
